@@ -105,15 +105,11 @@ export const projects = [
     // ~300px short and opened a dead gap under it.
     images: [
       '/projects/Rednoxx/Reg%20Slip.webp',
-      '/projects/Rednoxx/Foundations.webp',
-      '/projects/Rednoxx/Color%20Spec.webp',
-      '/projects/Rednoxx/Table.webp',
-      '/projects/Rednoxx/Patient%20Table.webp',
       '/projects/Rednoxx/Rednoxx%20Logo.webp',
+      '/projects/Rednoxx/Foundations.webp',
+      '/projects/Rednoxx/Table.webp',
       '/projects/Rednoxx/Empty%20State%201.webp',
       '/projects/Rednoxx/Button.webp',
-      '/projects/Rednoxx/Upload.webp',
-      '/projects/Rednoxx/Patient%20Tab.webp',
       '/projects/Rednoxx/Color%20Token.webp',
       '/projects/Rednoxx/Components.webp',
       '/projects/Rednoxx/Drawer.webp',
