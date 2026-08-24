@@ -88,6 +88,9 @@ export const projects = [
     // board + info but the drawer stays closed. Flip `comingSoon` off and add a
     // `sections` array to take it fully live.
     comingSoon: true,
+    // This one is actively being written up, so its ribbon and hover pill
+    // read "Currently Building" instead of the default "Coming Soon".
+    statusLabel: 'Currently Building',
     description:
       'Rednoxx is a healthcare platform for enrolments, payments, insurance, consultations, prescriptions, labs, surgery, and reporting. Built on a design system with foundations, 36 components, and 30 healthcare blocks, validated across a 50 screen product demo.',
     roles: ['Product Design', 'Design System Engineer', 'Interaction Design', 'Accessibility'],

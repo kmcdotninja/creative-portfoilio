@@ -230,14 +230,21 @@ export default function ProjectDrawer({
             </div>
 
             {project.comingSoon ? (
-              <div className="pd__coming-soon" aria-label="case study coming soon">
+              <div
+                className="pd__coming-soon"
+                aria-label={`case study ${(project.statusLabel || 'Coming Soon').toLowerCase()}`}
+              >
                 <span className="pd__coming-soon-eyebrow">
                   <span className="pd__coming-soon-dot" aria-hidden="true" />
                   In progress
                 </span>
-                <h3 className="pd__coming-soon-title">Case study coming soon</h3>
+                <h3 className="pd__coming-soon-title">
+                  {project.statusLabel === 'Currently Building'
+                    ? 'Currently building this case study'
+                    : 'Case study coming soon'}
+                </h3>
                 <p className="pd__coming-soon-body">
-                  I'm still putting this one together. The full write-up will land here soon — until then the image strip on the homepage gives you the quick look.
+                  I'm still putting this one together. The full write-up will land here once it's ready. Until then, the image strip on the homepage gives you the quick look.
                 </p>
               </div>
             ) : (

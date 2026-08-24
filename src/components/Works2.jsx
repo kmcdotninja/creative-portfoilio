@@ -9,7 +9,10 @@ import { projects } from '../data.js'
 const ProjectDrawer = lazy(() => import('./ProjectDrawer.jsx'))
 
 const Project = memo(function Project({ project, onOpen }) {
-  const { name, description, roles, team, images, comingSoon } = project
+  const { name, description, roles, team, images, comingSoon, statusLabel } = project
+  // Parked projects carry their own label (Rednoxx is actively being written
+  // up, the rest are queued), so the ribbon and hover pill read the same word.
+  const parkedLabel = statusLabel || 'Coming Soon'
   const pillRef = useRef(null)
   const [pillVisible, setPillVisible] = useState(false)
 
@@ -53,8 +56,13 @@ const Project = memo(function Project({ project, onOpen }) {
   return (
     <article className={`project${comingSoon ? ' project--soon' : ''}`}>
       {comingSoon && (
-        <span className="project__ribbon" aria-label="case study coming soon">
-          Coming Soon
+        <span
+          className={`project__ribbon${
+            parkedLabel.length > 12 ? ' project__ribbon--long' : ''
+          }`}
+          aria-label={`case study ${parkedLabel.toLowerCase()}`}
+        >
+          {parkedLabel}
         </span>
       )}
       <h2 className="project__title" data-reveal>
@@ -121,7 +129,7 @@ const Project = memo(function Project({ project, onOpen }) {
         }`}
         aria-hidden="true"
       >
-        {comingSoon ? 'Coming Soon' : 'Open'}
+        {comingSoon ? parkedLabel : 'Open'}
       </span>
     </article>
   )

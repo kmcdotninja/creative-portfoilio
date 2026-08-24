@@ -78,6 +78,19 @@
   pointer-events: none;
 }
 
+/* Longer labels ("Currently Building") need more sash than "Coming Soon"
+   fits in. The visible run of the ribbon is only the chord it cuts across
+   the corner, so the strip is pushed further down the diagonal (and set a
+   touch smaller) to widen that chord instead of letting the ends clip
+   mid-word. */
+.project__ribbon--long {
+  top: 44px;
+  left: -56px;
+  width: 250px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
 @media (max-width: 700px) {
   .project__ribbon {
     top: 22px;
@@ -85,6 +98,14 @@
     width: 200px;
     font-size: 11px;
     letter-spacing: 1.6px;
+  }
+
+  .project__ribbon--long {
+    top: 38px;
+    left: -54px;
+    width: 240px;
+    font-size: 10px;
+    letter-spacing: 0.8px;
   }
 }
 
