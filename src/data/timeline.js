@@ -107,7 +107,7 @@ export const TIMELINE = [
   {
     id: 'umrah',
     date: '2025-11',
-    title: 'Makkah,\nthen Madina',
+    title: 'First time in Madina,\nthen Makkah',
     // Masonry rather than a justified row: a row strands the last photo on a
     // phone with a third of the width empty beside it, and columns have no
     // orphan to strand. Seven of them, so it opens at a peek like Singapore.
@@ -127,7 +127,7 @@ export const TIMELINE = [
   {
     id: 'singapore',
     date: '2026-07',
-    title: '10 days on\nSingapore Island',
+    title: 'A beautiful trip to\nSingapore',
     body: 'I had the opportunity to explore Singapore, so I said, why not? From Arab Street and the riverside shophouses to the temples and Marina Bay after dark, it was a reminder that great cities, like great products, are defined by the small details.',
     // Enough photographs that a single justified row would run out of page —
     // masonry lets them stack at their own heights instead, and `collapse` opens
