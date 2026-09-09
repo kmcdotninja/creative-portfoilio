@@ -55,7 +55,7 @@
 // ---------------------------------------------------------------------------
 
 export const HEADLINE =
-  'Product Designer\nbuilding digital products\nfor humans'
+  'Product Designer\nbuilding digital products\n and shaping experiences'
 
 export const LEDE =
   'I’ve designed products across healthcare, fintech, retail, and enterprise, taking ideas from research to production. I also lead and mentor designers at [Friends of Figma Kano](https://friends.figma.com/kano/).'
