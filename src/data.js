@@ -2,7 +2,7 @@ export const projects = [
   {
     name: 'Kutuby',
     description:
-      'A learning app that turns Islamic studies for kids 6 to 12 into short, illustrated lessons that feel more like play than school.',
+      'A learning app that turns Islamic studies for kids, age 4 to 10 into short, illustrated lessons that feel more like play than school.',
     roles: ['Product Design', 'Art Direction', 'Website Design', 'Interaction Design'],
     team: [
       { name: 'Oselu Irabor', role: 'Illustrator' },
